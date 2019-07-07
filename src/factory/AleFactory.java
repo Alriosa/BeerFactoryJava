@@ -1,21 +1,18 @@
 package factory;
 
 import entities.Ale;
-import interfaces.IBeer;
-import interfaces.IDrinkServer;
+import interfaces.Beer;
+import interfaces.DrinkServer;
 
-public class AleFactory implements IDrinkServer {
-
+public class AleFactory implements DrinkServer {
+ 
 	@Override
-	public IBeer serveDrink() {
+	public Beer createBeer() {
 		
 		Ale ale = new Ale();
-		ale.setName("Alerazor");
-		ale.setType("Ale");
-		ale.setAlcohol("5%");
+		ale.infoDrink();
+		
 		return ale;
-		
-		
 	}
 	
 }

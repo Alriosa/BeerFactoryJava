@@ -1,11 +1,13 @@
 package factory;
-import interfaces.IBeer;
-import interfaces.IDrinkServer;
+import interfaces.Beer;
+import interfaces.DrinkServer;
 
-public class PiselnerFactory implements IDrinkServer {
+public class PiselnerFactory implements DrinkServer {
+
+
 
 	@Override
-	public IBeer serveDrink() {
+	public Beer createBeer() {
 		// TODO Auto-generated method stub
 		return null;
 	}

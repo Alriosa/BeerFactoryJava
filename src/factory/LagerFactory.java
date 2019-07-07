@@ -2,15 +2,16 @@ package factory;
 import entities.Lager;
 import interfaces.*;
 
-public class LagerFactory implements IDrinkServer {
+public class LagerFactory implements DrinkServer {
 
 	@Override
-	public IBeer serveDrink() {
+	public Beer createBeer() {
 		Lager lager = new Lager();
-		lager.setName("Lagerazor");
-		lager.setType("Lager");
-		lager.setAlcohol("4%");
+		lager.infoDrink();
+		
 		return lager;
 	}
+
+
 
 }

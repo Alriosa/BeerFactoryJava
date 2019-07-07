@@ -1,8 +1,8 @@
 package entities;
 
-import interfaces.IBeer;
+import interfaces.Beer;
 
-public class Pilsener implements IBeer {
+public class Pilsener implements Beer {
 	private String name;
 	private String type;
 	private String alcohol;
@@ -44,6 +44,14 @@ public class Pilsener implements IBeer {
 
 	@Override
 	public String toString() {
+		return "Pilsener [name=" + name + ", type=" + type + ", alcohol=" + alcohol + "]";
+	}
+
+	@Override
+	public String infoDrink() {
+		this.name = "Pilsen";
+		this.type = "Pilsener";
+		this.alcohol = "6%";
 		return "Pilsener [name=" + name + ", type=" + type + ", alcohol=" + alcohol + "]";
 	}
 	
