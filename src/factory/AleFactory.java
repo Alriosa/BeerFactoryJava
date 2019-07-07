@@ -6,7 +6,6 @@ import interfaces.DrinkServer;
 
 public class AleFactory implements DrinkServer {
  
-	@Override
 	public Beer createBeer() {
 		
 		Ale ale = new Ale();

@@ -11,7 +11,7 @@ public class BeerFactory {
 	 
 	 
 	 
-	 public static String serveDrink(DrinkServer factory) {
+	 public static String prepareDrink(DrinkServer factory) {
 		 Beer objectBeer = factory.createBeer();
 		 AddBeer(objectBeer);
 		 
@@ -31,4 +31,7 @@ public class BeerFactory {
 				
 			return mData;
 		}
-}
+
+	
+	}
+
